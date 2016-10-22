@@ -10,6 +10,7 @@
 			<img src="http://placehold.it/160x60" width="160" height="60" alt="GllacyShop">
 		</div>
 		<nav class="header-navigation">
+			<ul class="navigation">
 			<li>
 				<a href="#">Каталог</a>
 				<ul>
@@ -26,17 +27,78 @@
 			<li>
 				<a href="#">О Компании</a>
 			</li>
+			</ul>
 		</nav>
 		<div class="user-block">
-			<div class="search-form">
-				<a href="#"></a>
-				<input type="search" name="" placeholder="Что ищем?">
+			<div class="search_user-block">
+				<a href="#">Поиск</a>
+				<input type="search" name="search" placeholder="Что ищем?">
 			</div>
-			<div class="sign-in">
+			<div class="sign-in_user-block">
 			<a href="#">Вход</a>
-				
+				<form class="form_sign-in">
+				<input type="email" name="email" placeholder="Электронная почта">
+				<input type="password" name="pass" placeholder="Пароль">
+				<input type="submit" value="Войти">
+				<a href="#">Забыли пароль?</a>
+				<a href="#">Новая регистрация</a>
+				</form>
+			</div>
+			<div class="cart_user-block">
+				<a href="#">Пусто</a>
 			</div>
 		</div>
 	</header>
+	<div class="main-wrapper">
+		<div class="address">
+			<p>С 10 до 20, ежедневно</p>
+			<p class="phone">8 812 450-25-25</p>
+		</div>
+		<div class="slider">
+			<div class="slide slide1">
+				<p>Крем-брюле и пломбир с малиновым джемом</p>
+				<a class="slider-button" href="#">Давайте оба!</a>
+			</div>
+			<div class="slide slide2">
+				<p>Шоколадный пломбир и лимонный сорбет</p>
+				<a class="slider-button" href="#">Давайте оба!</a>
+			</div>
+			<div class="slide slide3">
+				<p>Пломбир с помадкой и клубничный щербет</p>
+				<a class="slider-button" href="#">Давайте оба!</a>
+			</div>
+			<form class="control-slider">
+				<input type="radio" name="slide">
+				<input type="radio" name="slide">
+				<input type="radio" name="slide">
+			</form>
+		</div>
+		<div class="giveaways-main">
+			<div class="giveaway">
+				<p class="giveaway-title">Малинка даром!</p>
+				<p class="giveaway-text">При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+				<a href="#">Хочу варенье!</a>
+			</div>
+			<div class="giveaway">
+				<p class="giveaway-title">Шоколадки даром!</p>
+				<p class="giveaway-text">При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки абсолютно бесплатно.</p>
+				<a href="#">Хочу шоколадки!</a>
+			</div>
+		</div>
+		<div class="catalog-products">
+			<div class="product">
+				<div class="product-image">
+					<img src="http://placehold.it/250x250" width="250" height="250" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+					<p class="product-price">
+						<span>310</span>/кг
+					</p>
+				</div>
+				<p class="product-name">
+					<a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+				</p>
+				<a href="#">Быстрый просмотр</a>
+			</div>
+		</div>
+	</div>
   </body>
 </html>
