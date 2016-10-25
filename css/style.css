@@ -17,15 +17,16 @@ a{
 .header-logo{
 	float: left;
 }
-.drop{
-	display: block;
+.signin-form{
+	width: 276px;
+	height: 214px;
 	background-color: #f8f7f4;
-	margin:10px;
 }
 .menu-drop a{
 	color: black;
 	font-size: 14px;
 	text-decoration: none;
+	font-weight: normal;
 }
 .navigation,
 .navigation ul,
