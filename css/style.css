@@ -1,6 +1,6 @@
 body {
 	background-color: #879f92;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Roboto', sans-serif;
   color: white;
 }
 h1 {
@@ -47,7 +47,7 @@ a {
 	background-color: #aabcb2;
 	border-radius: 15px;
 	display: inline-block;
-	padding:5px;
+	padding: 5px;
 }
 .cart-items-header {
 	width: 540px;
