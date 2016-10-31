@@ -3,6 +3,7 @@ div {
 }
 body {
 	background-color: #879f92;
+	background: url(../img/1200.jpg) no-repeat 50% 0%;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	min-width: 900px;
@@ -27,22 +28,41 @@ h2 {
 }
 header {
 	height: 75px;
+	padding: 0 2.3%;
 }
 .header-logo, 
 .navigation {
 	float: left;
 }
+.header-logo {
+	/*margin-left: 15px;*/
+	margin-top: 10px;
+}
 .user-block{
 	float: right;
 	position: relative;
+	margin-top: 30px;
+}
+.user-block div {
+	margin-left: 10px;
 }
 .navigation {
 	list-style: none;
 	padding: 0;
-	margin: 0;
+	margin-top: 30px;
+	margin-left: 30px;
 }
-.navigation li, .user-block div {
+.navigation li {
 	display: inline-block;
+	font-weight: 700;
+	margin-right: 25px;
+}
+.navigation a {
+	color: white;
+}
+.user-block div {
+	display: inline-block;
+	background-color: 
 }
 .address {
 	float:right;
@@ -52,9 +72,21 @@ header {
   display: table;
   clear: both;
 }
-.giveaway{
+.slide p {
+	text-align: center;
+	margin-top: 220px;
+	font-size: 60px;
+	font-weight: 700;
+}
+.slider-button {
+	margin: 0 auto;
+}
+.giveaways-main {
+	margin-top: 25px;
+}
+.giveaway {
 	display: inline-block;
-	width: 46.6%;
+	width: 48.7%;
 	height: 229px;
 }
 .giveaway1 {
@@ -65,9 +97,38 @@ header {
 	/*background: url("../img/banner-right.png") no-repeat 100%;*/
 /*	margin-left: 2.3%;*/
 }
+.giveaway-title {
+	font-size: 35px;
+	font-weight: 700;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+.giveaway-text {
+	margin-top: -20px;
+	font-size: 18px;
+	font-weight: 700;
+	margin-left: 20px;
+}
+.catalog-products {
+	margin-top: 45px;
+}
 .product {
-	display: inline-block;
-	vertical-align: top;
-	width: 22.2%;
-	margin-left: 2.2%;
+  display: inline-block;
+  vertical-align: top;
+  width: 22.4%;
+  margin-right: 3%;
+  min-height: 360px;
+  max-height: 405px;
+  position: relative;
+}
+.product:nth-child(4n) {
+  margin-right: 0;
+}
+.product-image {
+	height: 100%;
+  position: relative;
+}
+.product-image img {
+  display: block;
+  width: 100%;
 }
