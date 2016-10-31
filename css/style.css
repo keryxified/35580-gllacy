@@ -1,4 +1,4 @@
-div {
+div, p {
 	outline: 1px solid yellow;
 }
 body {
@@ -16,9 +16,7 @@ body {
   display: table;
   clear: both;
 }
-.main-wrapper {
-	padding: 0 2.3%;
-}
+
 h1 {
 	font-size: 35px;
 }
@@ -64,6 +62,9 @@ header {
 	display: inline-block;
 	background-color: 
 }
+.main-wrapper {
+	padding: 0 2.3%;
+}
 .address {
 	float:right;
 }
@@ -86,39 +87,43 @@ header {
 }
 .giveaway {
 	display: inline-block;
-	width: 48.7%;
-	height: 229px;
+	width: 45.7%;
+	padding: 15px 20px;
+	margin-right: 2.2%;
+}
+.giveaway:nth-child(2) {
+	margin-right: 0;
 }
 .giveaway1 {
 	/*background: url("../img/banner-left.png") no-repeat 100%;*/
-	margin-right: 2%;
+	/*margin-right: 2%;*/
 }
 .giveaway2 {
 	/*background: url("../img/banner-right.png") no-repeat 100%;*/
-/*	margin-left: 2.3%;*/
+	margin-right: 0;
 }
 .giveaway-title {
 	font-size: 35px;
 	font-weight: 700;
-	margin-top: 15px;
-	margin-left: 20px;
 }
 .giveaway-text {
-	margin-top: -20px;
 	font-size: 18px;
 	font-weight: 700;
-	margin-left: 20px;
+}
+.giveaway a {
+	float: right;
+	font-size: 18px;
+	font-weight: 700;
+	margin
 }
 .catalog-products {
-	margin-top: 45px;
+	margin-top: 40px;
 }
 .product {
   display: inline-block;
   vertical-align: top;
   width: 22.4%;
   margin-right: 3%;
-  min-height: 360px;
-  max-height: 405px;
   position: relative;
 }
 .product:nth-child(4n) {
@@ -131,4 +136,33 @@ header {
 .product-image img {
   display: block;
   width: 100%;
+}
+.product-price {
+	position: absolute;
+	bottom: -40px;
+	left: 0;
+	font-size: 30px;
+	font-weight: 700;
+}
+.product-price span {
+	font-size: 45px;
+}
+.product-name {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	color: white;
+}
+/*.product-hover {
+	position: absolute;
+	bottom: 0;
+}*/
+.seo {
+	padding: 30px 20px;
+}
+.seo-content {
+	width: 40%;
+	display: inline-block;
+	margin-left: 6.5%;
+	vertical-align: top;
 }
