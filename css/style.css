@@ -1,20 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
 div, p {
 	outline: 1px solid yellow;
+	box-sizing: border-box;
 }
 body {
 	background-color: #879f92;
-	background: url(../img/1200.jpg) no-repeat 50% 0%;
+	/*background: url(../img/1200.jpg) no-repeat 50% 0%;*/
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	min-width: 900px;
 	max-width: 1200px;
 	margin: 0 auto;
-	box-sizing: border-box;
+
 }
 .clearfix {
-  content: "";
-  display: table;
-  clear: both;
+	content: "";
+	display: table;
+	clear: both;
+}
+/*.button {
+	border: none;
+	border-radius: 40px;
+	font-weight: 500;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ed5a3d;
+	background-image: linear-gradient(to bottom,#f26843 0%,#e74a35 100%);
+	box-shadow: 0 2px 2px 0 rgba(172,16,0,.64);*/
 }
 
 h1 {
@@ -25,81 +40,84 @@ h2 {
 	font-size: 24px;
 }
 header {
-	height: 75px;
 	padding: 0 2.3%;
 }
-.header-logo, 
-.navigation {
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.header-logo, .navigation {
 	float: left;
 }
-.header-logo {
-	/*margin-left: 15px;*/
-	margin-top: 10px;
-}
-.user-block{
-	float: right;
-	position: relative;
-	margin-top: 30px;
-}
-.user-block div {
-	margin-left: 10px;
-}
 .navigation {
+	font-size: 0;
 	list-style: none;
-	padding: 0;
-	margin-top: 30px;
-	margin-left: 30px;
+	display: block;
+	vertical-align: middle;
 }
 .navigation li {
 	display: inline-block;
+	vertical-align: middle;
+	font-size: 14px;
 	font-weight: 700;
-	margin-right: 25px;
 }
 .navigation a {
-	color: white;
+	vertical-align: middle;
 }
-.user-block div {
+.user-block {
+	float: right;
+	font-size: 14px;
+	font-weight: 600;
+}
+.user-block>div{
 	display: inline-block;
-	background-color: 
+	vertical-align: middle;
 }
+
 .main-wrapper {
 	padding: 0 2.3%;
+	position: relative;
 }
 .address {
-	float:right;
-}
-.address:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.slide p {
-	text-align: center;
-	margin-top: 220px;
-	font-size: 60px;
+	text-align: right;
+	font-size: 14px;
 	font-weight: 700;
 }
+.phone {
+	font-size: 22px;
+}
+.slide {
+	font-size: 60px;
+	font-weight: 700;
+	padding: 275px 0 30px;
+	text-align: center;
+}
+.control-slider,
 .slider-button {
-	margin: 0 auto;
+	display: inline-block;
+	vertical-align: top;
+}
+.slider-button {
+	text-align: center;
+	font-size: 32px;
+	font-weight: 700;
+/*	padding: 15px 30px;*/
 }
 .giveaways-main {
-	margin-top: 25px;
+	margin-top: 50px;
+	font-size: 0;
 }
 .giveaway {
+	position: relative;
 	display: inline-block;
-	width: 45.7%;
-	padding: 15px 20px;
+	vertical-align: top;
+	padding: 15px;
+	width: 48.9%;
 	margin-right: 2.2%;
+	max-height: 200px ; 
 }
 .giveaway:nth-child(2) {
-	margin-right: 0;
-}
-.giveaway1 {
-	/*background: url("../img/banner-left.png") no-repeat 100%;*/
-	/*margin-right: 2%;*/
-}
-.giveaway2 {
-	/*background: url("../img/banner-right.png") no-repeat 100%;*/
 	margin-right: 0;
 }
 .giveaway-title {
@@ -109,25 +127,32 @@ header {
 .giveaway-text {
 	font-size: 18px;
 	font-weight: 700;
+	margin-top: 10px;
+	margin-bottom: 45px;
+	min-height: 90px;
 }
 .giveaway a {
+	position: absolute;
+	right: 0;
+	bottom: 20px;
+	margin-right: 40px;
 	float: right;
 	font-size: 18px;
 	font-weight: 700;
-	margin
 }
 .catalog-products {
-	margin-top: 40px;
+	margin-top: 30px;
+	font-size: 0;
 }
 .product {
-  display: inline-block;
-  vertical-align: top;
-  width: 22.4%;
-  margin-right: 3%;
-  position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 23.2%;
+	margin-right: 2.3%;
+	margin-bottom: 30px;
 }
 .product:nth-child(4n) {
-  margin-right: 0;
+	margin-right: 0;
 }
 .product-image {
 	height: 100%;
@@ -139,7 +164,7 @@ header {
 }
 .product-price {
 	position: absolute;
-	bottom: -40px;
+	bottom: 0;
 	left: 0;
 	font-size: 30px;
 	font-weight: 700;
@@ -152,17 +177,27 @@ header {
 	font-size: 16px;
 	font-weight: 500;
 	color: white;
+	min-height: 60px;
 }
-/*.product-hover {
-	position: absolute;
-	bottom: 0;
-}*/
+.product-hover {
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+}
 .seo {
+	margin-top: 20px;
 	padding: 30px 20px;
 }
-.seo-content {
-	width: 40%;
+.seo-top, .seo-bottom {
 	display: inline-block;
-	margin-left: 6.5%;
+}
+.seo-content {
+	display: inline-block;
 	vertical-align: top;
+	width: 48.5%;
+	margin-right: 2.2%;
+	padding-left: 50px;
+}
+.seo-content:nth-child(2n) {
+	margin-right: 0;
 }
