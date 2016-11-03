@@ -47,13 +47,17 @@ header:after {
 	display: table;
 	clear: both;
 }
-.header-logo, .navigation {
+.header-navigation {
 	float: left;
+}
+.header-logo {
+	display: inline-block;
+	vertical-align: middle;
 }
 .navigation {
 	font-size: 0;
 	list-style: none;
-	display: block;
+	display: inline-block;
 	vertical-align: middle;
 }
 .navigation li {
@@ -64,22 +68,26 @@ header:after {
 }
 .navigation a {
 	vertical-align: middle;
+	margin-left: 30px;
 }
 .user-block {
 	float: right;
+	margin-top: 25px;
 	font-size: 14px;
 	font-weight: 600;
 }
 .user-block>div{
 	display: inline-block;
 	vertical-align: middle;
+	margin-left: 10px;
 }
-
 .main-wrapper {
 	padding: 0 2.3%;
 	position: relative;
 }
 .address {
+	display: block;
+	margin-left: auto;
 	text-align: right;
 	font-size: 14px;
 	font-weight: 700;
@@ -115,7 +123,7 @@ header:after {
 	padding: 15px;
 	width: 48.9%;
 	margin-right: 2.2%;
-	max-height: 200px ; 
+	min-height: 230px ; 
 }
 .giveaway:nth-child(2) {
 	margin-right: 0;
@@ -149,7 +157,6 @@ header:after {
 	vertical-align: top;
 	width: 23.2%;
 	margin-right: 2.3%;
-	margin-bottom: 30px;
 }
 .product:nth-child(4n) {
 	margin-right: 0;
@@ -176,20 +183,22 @@ header:after {
 	text-align: center;
 	font-size: 16px;
 	font-weight: 500;
-	color: white;
+	margin-top: 30px;
 	min-height: 60px;
 }
 .product-hover {
+	display: none;
 	font-size: 16px;
 	font-weight: 500;
 	text-align: center;
 }
 .seo {
 	margin-top: 20px;
-	padding: 30px 20px;
+	padding: 2% 2%;
 }
 .seo-top, .seo-bottom {
 	display: inline-block;
+	margin-top: 20px;
 }
 .seo-content {
 	display: inline-block;
@@ -197,7 +206,73 @@ header:after {
 	width: 48.5%;
 	margin-right: 2.2%;
 	padding-left: 50px;
+	color: black;
+	font-size: 16px;
 }
 .seo-content:nth-child(2n) {
 	margin-right: 0;
 }
+.blog-news, .subscribe {
+	vertical-align: top;
+	position: relative;
+	display: inline-block;
+	width: 48.9%;
+	margin-right: 2.2%;
+}
+.blog-news, .subscribe {
+	font-size: 16px;
+	font-weight: 500;
+	min-height: 230px;
+	padding: 30px 20px;
+	color: black;
+}
+.subscribe {
+	margin-right: 0;
+}
+.blog-news a{
+	font-size: 24px;
+	font-weight: 700;
+	padding-right: 100px;
+}
+.subscribe {
+	font-size: 16px;
+	font-weight: 400;
+	padding: 40px 30px;
+}
+.subscribe p {
+	padding-bottom: 80px;
+}
+.map {
+	margin-top: 30px;
+	padding: 60px 30px;
+}
+.shop-address {
+	padding: 30px 25px;
+	width: 300px;
+	margin-left: auto;
+}
+footer {
+	padding: auto 2.3%;
+	text-align: center;
+}
+footer
+.social-buttons {
+	float: left;
+	margin-top:30px;
+}
+.social-buttons:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.footer-links {
+	display: inline-block;
+	margin: 0 auto;
+}
+.footer-credits {
+	float: right;
+}
+.footer-credits:after {
+	content: "";
+	display: table;
+	clear: both;
