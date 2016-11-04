@@ -115,7 +115,7 @@ header:after {
 	right: 0;
 	padding: 18px 20px;
 	z-index: 1;
-	display: none;
+	/*display: none;*/
 }
 .signin-form input {
 	width: 240px;
