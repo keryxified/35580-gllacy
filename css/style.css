@@ -252,8 +252,9 @@ header:after {
 footer {
 	padding: 2.3%;
 	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 15px;
 }
-footer
 .social-buttons {
 	float: left;
 }
@@ -261,9 +262,6 @@ footer
 	content: "";
 	display: table;
 	clear: both;
-}
-footer {
-	padding-top: 30px;
 }
 .footer-links {
 	display: inline-block;
