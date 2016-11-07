@@ -8,7 +8,7 @@ div, p, a {
 }
 body {
 	background-color: #879f92;
-	/*background: url(../img/1200.jpg) no-repeat 50% 0%;*/
+	background: url(../img/1200.jpg) no-repeat 50% 0%;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	min-width: 900px;
@@ -53,6 +53,8 @@ header:after {
 }
 .header-logo {
 	float: left;
+	margin-top: 10px;
+	margin-left: -10px;
 }
 .navigation {
 	font-size: 0;
@@ -63,15 +65,18 @@ header:after {
 .navigation>li {
 	display: inline-block;
 	vertical-align: top;
-	font-size: 14px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: 700;
 	position: relative;
 }
 .navigation a {
 	vertical-align: middle;
-	margin-left: 30px;
+	margin-left: 28px;
+	color: white;
 }
 .menu-drop {
+	display: none;
 	position: absolute;
 	background-color: grey;
 	list-style: none;
@@ -94,6 +99,14 @@ header:after {
 	vertical-align: middle;
 	margin-left: 10px;
 }
+.search-icon {
+	width: 33px;
+	height: 33px;
+	background-color: #a1b5aa;
+	border-radius: 50%;
+	background: #a1b5aa url('../img/icon-search.png') no-repeat 50%;
+}
+
 .search-form {
 	position: absolute;
 	right: 130px;
@@ -104,13 +117,20 @@ header:after {
 	z-index: 1;
 	display: none;
 }
-.sign-in_user-block:hover .search-form {
+.search-icon:hover .search-form {
 	display: block;
+}
+.sign-in-icon {
+	width: 93px;
+	height: 32px;
+	background-color: #a1b5aa;
+	border-radius: 15px;
 }
 .sign-in_user-block {
 	position: relative;
 }
 .signin-form {
+	display: none;
 	position: absolute;
 	right: 0;
 	padding: 18px 20px;
@@ -134,6 +154,10 @@ header:after {
 }
 .cart_user-block {
 	position: relative;
+	width: 117px;
+	height: 32px;
+	background-color: #a1b5aa;
+	border-radius: 15px;
 }
 .cart-items-header {
 	background-color: grey; 
