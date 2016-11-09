@@ -3,12 +3,12 @@
 	padding: 0;
 }
 div, p, a {
-	/*outline: 1px solid yellow;*/
+	outline: 1px solid yellow;
 	box-sizing: border-box;
 }
 body {
 	background-color: #879f92;
-	/*background: url(../img/1200.jpg) no-repeat 50% 0%;*/
+	background: url(../img/1200.jpg) no-repeat 50% 0%;
 	font-family: 'Roboto', sans-serif;
 	color: white;
 	min-width: 900px;
@@ -73,6 +73,7 @@ header:after {
 	list-style: none;
 	display: inline-block;
 	vertical-align: middle;
+	margin-top: 5px;
 }
 .navigation>li {
 	display: inline-block;
@@ -150,14 +151,16 @@ header:after {
 .search_user-block:hover .search-form {
 	display: block;
 }
-.sign-in-icon {
+/*.sign-in-icon {
 	width: 93px;
 	height: 32px;
 	background-color: #a1b5aa;
 	border-radius: 15px;
-}
+}*/
 .sign-in_user-block {
 	position: relative;
+	width: 93px;
+	padding: 10px 17px 9px 44px;
 }
 .signin-form {
 	display: none;
@@ -248,20 +251,19 @@ header:after {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	padding: 15px;
+	padding: 15px 15px 20px;
 	width: 48.9%;
 	margin-right: 2.2%;
-	min-height: 230px; 
 	border-radius: 10px;
+}
+.giveaway:nth-child(2) {
+	margin-right: 0;
 }
 .giveaway1 {
 	background: url('../img/giveaway1.jpg') no-repeat;
 }
 .giveaway2 {
 	background: url('../img/giveaway2.jpg') no-repeat;
-}
-.giveaway:nth-child(2) {
-	margin-right: 0;
 }
 .giveaway-title {
 	font-size: 35px;
@@ -272,16 +274,20 @@ header:after {
 	font-weight: 700;
 	padding: 5px;
 	margin-top: 10px;
-	margin-bottom: 45px;
+	margin-bottom: 5px;
 	min-height: 90px;
 }
 .giveaway a {
 	font-size: 18px;
 	font-weight: 700;
-	display: block;
-	width: 165px;
-	margin-left: auto;
 	text-align: center;
+	padding: 15px 25px;
+	float: right;
+}
+.giveaway a:after {
+	content: "";
+	display: table;
+	clear: both;
 }
 .catalog-products {
 	margin-top: 30px;
@@ -292,6 +298,7 @@ header:after {
 	vertical-align: top;
 	width: 23.2%;
 	margin-right: 2.3%;
+	margin-bottom: 35px;
 }
 .product:nth-child(4n) {
 	margin-right: 0;
@@ -300,10 +307,10 @@ header:after {
 	height: auto;
   position: relative;
 }
-/*.product-image img {
-  display: block;
-  max-width: 100%;
-}*/
+.product-image img {
+	height: auto;
+	max-width: 100%;
+}
 .product-price {
 	position: absolute;
 	bottom: 0;
@@ -319,8 +326,9 @@ header:after {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 22px;
-	margin-top: 15px;
-	min-height: 60px;
+	margin-top: 25px;
+	padding: 0 5px;
+	/*min-height: 60px;*/
 }
 .product-hover {
 	font-size: 16px;
@@ -334,13 +342,16 @@ header:after {
 	display: block;
 }
 .fastview {
-	width: 195px;
-	height: 45px;
+/*	width: 195px;
+	height: 45px;*/
+	padding: 15px;
 }
 .seo {
-	margin-top: 20px;
-	padding: 25px 20px;
+	/*margin-top: 20px;*/
+	padding: 25px 20px 30px;
 	margin-bottom: 40px;
+	/*background: #f0e2c7 url('../img/seo-background.jpg') repeat-x;*/
+	border-radius: 15px;
 }
 .seo h2 {
 	margin-bottom: 10px;
@@ -413,6 +424,21 @@ footer {
 .footer-links {
 	display: inline-block;
 	margin: 0 auto;
+}
+.social-buttons a {
+	display: inline-block;
+	width: 31px;
+	height: 31px;
+	margin-right: 7px;
+	font-size: 0;
+	border: 4px solid rgba(194, 206, 199, 1.0);
+	border-radius: 50%;
+	opacity: 0.8;
+	vertical-align: bottom;
+}
+.twitter-button {
+	background-color: #849d8f;
+	background-image: url(../img/icon-twitter.png);
 }
 .footer-credits {
 	float: right;
