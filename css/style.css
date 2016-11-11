@@ -405,18 +405,28 @@ header:after {
 	font-size: 16px;
 	line-height: 22px;
 	min-height: 220px;
+
+}
+.subscribe form {
+	padding-right: 160px;
+	position: relative;
 }
 .subscribe p {
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	min-height: 80px;
 }
 .subscribe input {
 	padding: 10px;
-	width: 100%;
 	margin-right: 150px;
 }
 .subscribe input[type=text]{
-
+	width: 100%;
+	border-radius: 5px;
+}
+.subscribe input[type=submit]{
+	position: absolute;
+	right: -150px;
+	bottom: 0;
 }
 .map {
 	margin-top: 40px;
@@ -429,16 +439,28 @@ header:after {
 	color: black;
 }
 .shop-address p {
-	margin-bottom: 20px;
-
+	font-size: 14px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+.shop-address span {
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 18px;
+}
+.phone-map {
+	display: block;
 }
 .feedback-button {
-	margin-left: auto;
+	display: block;
+	width: 100%;
+	padding: 15px;
 }
 footer {
 	padding: 2.3%;
 	text-align: center;
-	padding-top: 20px;
+	padding-top: 40px;
 	padding-bottom: 15px;
 }
 .social-buttons {
@@ -455,18 +477,30 @@ footer {
 }
 .social-buttons a {
 	display: inline-block;
-	width: 31px;
-	height: 31px;
+	width: 40px;
+	height: 40px;
 	margin-right: 7px;
 	font-size: 0;
 	border: 4px solid rgba(194, 206, 199, 1.0);
 	border-radius: 50%;
-	opacity: 0.8;
+
 	vertical-align: bottom;
 }
 .twitter-button {
 	background-color: #849d8f;
 	background-image: url(../img/icon-twitter.png) ;
+}
+.instagram-button {
+	background-color: #849d8f;
+	background-image: url(../img/icon-instagram.png);
+}
+.facebook-button {
+	background-color: #849d8f;
+	background-image: url(../img/icon-facebook.png);
+}
+.vk-button {
+	background-color: #849d8f;
+	background-image: url(../img/icon-vk.png);
 }
 .footer-credits {
 	float: right;
