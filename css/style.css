@@ -21,17 +21,21 @@ body > input[type="radio"] {
 	display: none;
 }
 .site-wrapper {
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+.part-wrapper {
 	min-width: 900px;
 	max-width: 1200px;
 	margin: 0 auto;
-	background-repeat: no-repeat;
-	background-position: top center;
 }
 .catalog {
 	background-color: #869f91;
 }
 a {
-	color: white;
+	color: #ffffff;
+	text-decoration: none;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 a:hover {
 	color: #ffbc9e;
@@ -60,6 +64,9 @@ a:hover {
 .button:active {
 	background-image: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
 	box-shadow: 0 2px 2px #ac1000 inset;
+}
+input [type="text"]:hover {
+	border-color: #c7c6c5;
 }
 .slider {
 	text-align: center;
@@ -140,14 +147,15 @@ header:after {
 	text-decoration: none;
 }
 .menu-drop {
+	padding: 5px;
 	z-index: 3;
 	display: none;
-	top: 40px;
+	top: 35px;
 	position: absolute;
 	left: -5px;
 	background-color: #f8f7f4;
 	list-style: none;
-	width: 140px;
+	width: 150px;
 	font-size: 14px;
 	line-height: 16px;
 	border-radius: 5px;
@@ -158,9 +166,11 @@ header:after {
 }
 .menu-drop li {
 	padding: 8px 0 8px 0;
+	text-decoration: none;
 }
 .menu-drop li:hover {
 	background-color: #fbded7;
+	text-decoration: none;
 }
 .menu-drop a {
 	color: black;
@@ -652,11 +662,11 @@ header:after {
 	text-align: center;
 	display: none;
 	position: absolute;
-	width: 105%;
+	width: 104%;
 	height: 125%;
-	background-color: rgba(168,185,174,0.6);
-	top: -2.5%;
-	left: -2.5%; 
+	background-color: rgba(255, 255, 255, 0.4);
+	top: -2%;
+	left: -2%; 
 	z-index: 1;
 	border-radius: 5px;
 	text-decoration: none;
@@ -1257,7 +1267,7 @@ h1 {
 	position: fixed;
 	top: 0;
 	left: 0;
-	z-index: 50;
+	z-index: 10;
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.5);
