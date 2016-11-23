@@ -21,13 +21,15 @@
 					<ul class="navigation">
 						<li>
 							<a href="#">Каталог</a>
-							<ul class="menu-drop">
-								<li><a class="bold-menu" href="#">Новинки</a></li>
-								<li><a href="catalog.html">Сливочное</a></li>
-								<li><a href="#">Щербеты</a></li>
-								<li><a href="#">Фруктовый лед</a></li>
-								<li><a href="#">Мелорин</a></li>
-							</ul>
+								<div class="menu-drop-wrapper">
+								<ul class="menu-drop">
+									<li class="bold-menu"><a href="#">Новинки</a></li>
+									<li><a href="catalog.html">Сливочное</a></li>
+									<li><a href="#">Щербеты</a></li>
+									<li><a href="#">Фруктовый лед</a></li>
+									<li><a href="#">Мелорин</a></li>
+								</ul>
+								</div>
 						</li>
 						<li>
 							<a href="#">Доставка и оплата</a>
@@ -191,13 +193,15 @@
 				</div>
 			</div>
 			<div class="map clearfix">
-				<div class="shop-address">
-					<p>Адрес главного офиса и<br> офлайн магазина:</p>
-					<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-					<p>Для заказов по телефону:
-					<a class="contact-phone">8 812 450-25-25</a>
-					<p>(с 10 до 20 ежедневно)</p>
-					<a class="feedback-button button" href="#">Форма обратной связи</a>
+				<div class="map-wrapper">
+					<div class="shop-address">
+						<p>Адрес главного офиса и<br> офлайн магазина:</p>
+						<p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+						<p>Для заказов по телефону:
+						<a class="contact-phone">8 812 450-25-25</a>
+						<p>(с 10 до 20 ежедневно)</p>
+						<a class="feedback-button button" href="#">Форма обратной связи</a>
+					</div>
 				</div>
 			</div>
 			<div class="feedback-form">
@@ -210,31 +214,33 @@
 						<input class="feedback-button button" type="submit" name="feedback-submit" value="Отправить">
 					</form>
 			</div>
-			<footer class="footer part-wrapper">
-				<div class="social-buttons">
-					<a class="twitter-button" href="#">Twitter</a>
-					<a class="instagram-button" href="#">Instagram</a>
-					<a class="facebook-button" href="#">Facebook</a>
-					<a class="vk-button" href="#">Vk.com</a>
-				</div>
-				<div class="footer-links">
-					<div class="footer-links-left">
-						<a href="#">Для поставщиков</a>
-						<a href="#">О производстве</a>
+			<div class="part-wrapper">
+				<footer class="footer">
+					<div class="social-buttons">
+						<a class="twitter-button" href="#">Twitter</a>
+						<a class="instagram-button" href="#">Instagram</a>
+						<a class="facebook-button" href="#">Facebook</a>
+						<a class="vk-button" href="#">Vk.com</a>
 					</div>
-					<div class="footer-links-right">
-						<a href="#">Наши документы</a>
-						<a href="#">Экологические стандарты</a>
+					<div class="footer-links">
+						<div class="footer-links-left">
+							<a href="#">Для поставщиков</a>
+							<a href="#">О производстве</a>
+						</div>
+						<div class="footer-links-right">
+							<a href="#">Наши документы</a>
+							<a href="#">Экологические стандарты</a>
+						</div>
 					</div>
-				</div>
-				<div class="footer-credits">
-					<div class="academy-logo">
-						<img src="img/academy-logo.png" width="108" height="38" alt="HTML Academy">
+					<div class="footer-credits">
+						<div class="academy-logo">
+							<img src="img/academy-logo.png" width="108" height="38" alt="HTML Academy">
+						</div>
+							<p>Сделано в <a href="#">HTML Academy</a> &#169; 2016</p>
 					</div>
-						<p>Сделано в <a href="#">HTML Academy</a> &#169; 2016</p>
-				</div>
-			</footer>
-			<!-- <div class="modal-overlay"></div> -->
+				</footer>
+			</div>
+			<div class="modal-overlay"></div>
 		</div>
 		<script>
 			var link = document.querySelector(".feedback-button");
