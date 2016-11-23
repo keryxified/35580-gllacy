@@ -69,6 +69,9 @@ input[type="text"]:hover,
 input[type="password"]:hover {
 	cursor: pointer;
 }
+input[type="text"] {
+	font-size: 16px;
+}
 .slider {
 	text-align: center;
 }
@@ -212,15 +215,6 @@ li .current-page-link {
 	cursor: default;
 	pointer-events: none;
 }
-/*.current-page,
-.current-page:hover {
-	background-color: #d07058;
-}
-.current-page a,
-.current-page-link a:hover {
-	background-color: #d07058;
-	color: #ffffff;
-}*/
 .user-block {
 	position: relative;
 	margin-top: 22px;
@@ -261,7 +255,6 @@ li .current-page-link {
 	height: 33px;
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.2) url("../img/icon-search.png") no-repeat 50% 7px;
-	background-color: #a1b5aa;
 }
 .search_user-block {
 	position: relative;
@@ -525,7 +518,6 @@ li .current-page-link {
 .main-wrapper {
 	position: relative;
 	padding: 0 2.3%;
-	/*	margin-bottom: 40px;*/
 }
 .slider {
 	position: relative;
@@ -626,22 +618,6 @@ li .current-page-link {
 .phone {
 	font-size: 22px;
 }
-/*.slide {
-	font-size: 60px;
-	font-weight: 700;
-	padding: 275px 0 30px;
-	text-align: center;
-}
-.control-slider,
-.slider-button {
-	display: inline-block;
-	vertical-align: top;
-}
-.slider-button {
-	text-align: center;
-	font-size: 32px;
-	font-weight: 700;
-}*/
 .giveaways-main {
 	margin-top: 38px;
 	font-size: 0;
@@ -651,7 +627,7 @@ li .current-page-link {
 	display: inline-block;
 	width: 48.9%;
 	margin-right: 2.2%;
-	padding: 15px 15px 25px;
+	padding: 15px 15px 20px;
 	vertical-align: top;
 	border-radius: 10px;
 }
@@ -669,7 +645,6 @@ li .current-page-link {
 	font-weight: 700;
 }
 .giveaway-text {
-	/*margin-bottom: 5px;*/
 	min-height: 90px;
 	margin-top: 10px;
 	padding: 5px;
@@ -677,7 +652,7 @@ li .current-page-link {
 	font-weight: 700;
 }
 .giveaway-button {
-	padding: 15px 25px;
+	padding: 13px 25px;
 	font-size: 18px;
 	font-weight: 700;
 	float: right;
@@ -870,10 +845,8 @@ li .current-page-link {
 	padding-right: 140px;
 	font-family: "Roboto", "Arial", sans-serif;
 }
-
 .subscribe p {
-	min-height: 80px;
-	margin-bottom: 22px;
+	min-height: 100px;
 	color: #666666;
 }
 .subscribe input {
@@ -897,7 +870,7 @@ li .current-page-link {
 	position: absolute;
 	right: -150px;
 	bottom: 0;
-	padding: 12px 15px;
+	padding: 9px 15px;
 	font-size: 18px;
 	font-weight: 700;
 	line-height: 24px;
@@ -908,7 +881,7 @@ li .current-page-link {
 	width: 100%;
 	height: 430px;
 	margin-top: 40px;
-	background: url("../img/map.jpg");
+	background: #f3f3f3 url("../img/map.jpg") no-repeat 50%;
 }
 .map-wrapper {
 	position: relative;
@@ -962,7 +935,7 @@ footer {
 	padding-top: 30px;
 	padding-bottom: 15px;
 	text-align: center;
-	border-top: 1px solid white;
+	border-top: 1px solid #ffffff;
 }
 .social-buttons {
 	float: left;
@@ -1142,21 +1115,43 @@ h1 {
 	font-weight: 500;
 	line-height: 16px;
 }
+.filters-sorting {
+	position: relative;
+}
+.filters-sorting:after {
+	position: absolute;
+	top: 43px;
+	right: 15px;
+	width: 0;
+	height: 0;
+	content: "";
+	cursor: pointer;
+	border: 4px solid #ffffff;
+	border-right-color: transparent;
+	border-bottom-width: 0;
+	border-left-color: transparent;
+}
+.filters-sorting:hover:after {
+	border: 4px solid #000000;
+	border-right-color: transparent;
+	border-bottom-width: 0;
+	border-left-color: transparent;
+}
 .filters-sorting select {
 	display: block;
-	padding: 6px 15px 9px 11px;
+	padding: 6px 37px 9px 11px;
 	font: inherit;
 	cursor: pointer;
 	color: white;
 	border: none;
 	border-radius: 20px;
+	outline: none;
 	background: #aabab0;
+	-webkit-appearance: none;
 	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
 }
-/*.filters-sorting select:active {
-	background: #ffffff;
-	color: #000000;
-}*/
 .filters-sorting select:hover {
 	color: #000000;
 	border: none;
