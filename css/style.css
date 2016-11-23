@@ -528,6 +528,9 @@ li .current-page-link {
 .slide {
 	display: none;
 }
+.slide a {
+	border: none;
+}
 .slide-title {
 	width: 700px;
 	margin: 0 auto;
