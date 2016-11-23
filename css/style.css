@@ -830,6 +830,7 @@ li .current-page-link {
 }
 .news a:hover {
 	color: #e84d37;
+	border: none;
 }
 .subscribe {
 	min-height: 220px;
@@ -922,9 +923,13 @@ li .current-page-link {
 	margin-bottom: 2px;
 	font-size: 18px;
 	font-weight: 700;
+	border: none;
 	line-height: 22px;
 	text-decoration: none;
 	color: #000000;
+}
+.contact-phone:hover {
+	border: none;
 }
 .feedback-button {
 	display: block;
