@@ -2,9 +2,9 @@
 <html lang="ru">
 	<head>
 		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
 		<title>Глейси: Сливочное мороженое</title>
 	</head>
 	<body>
@@ -39,11 +39,12 @@
 				<div class="user-block">
 					<div class="search_user-block">
 						<div class="search-icon">
-						<a href="#"></a>
+							<a href="#"></a>
 						</div>
 						<div class="user-drop-wrapper">
 							<div class="search-form">
-								<input type="search" name="search" placeholder="Что ищем?">
+								<label for="search">Что ищем?</label>
+								<input type="search" name="search" id="search" placeholder="Что ищем?">
 							</div>
 						</div>
 					</div>
@@ -54,11 +55,13 @@
 						<div class="user-drop-wrapper">
 							<div class="signin-form">
 								<form action="#" name="sign-in">
-								<input type="text" name="email-sign" placeholder="Электронная почта">
-								<input type="password" name="pass-sign" placeholder="Пароль">
-								<input class="button" type="submit" value="Войти">
-								<a href="#">Забыли пароль?</a>
-								<a href="#">Новая регистрация</a>
+									<label for="email-sign">Электронная почта</label>
+									<input type="text" name="email-sign" id="email-sign" placeholder="Электронная почта">
+									<label for="email-sign">Пароль</label>
+									<input type="password" name="pass-sign" id="pass-sign" placeholder="Пароль">
+									<input class="signin-submit" type="submit" value="Войти">
+									<a href="#">Забыли пароль?</a>
+									<a href="#">Новая регистрация</a>
 								</form>
 							</div>
 						</div>
@@ -107,10 +110,9 @@
 				</div>
 				<h1>Сливочное мороженое</h1>
 				<div class="filters-block">
-					<form id="filters" action="#" >
+					<form id="filters" action="https://echo.htmlacdemy.ru" method="post">
 						<div class="filters-sorting">
-							<div class="filter-name">Сортировка:
-							</div>
+							<div class="filter-name">Сортировка:</div>
 							<div class="values sort">
 								<select form="filters">
 									<option value="popularity">по популярности</option>
@@ -121,8 +123,7 @@
 							</div>
 						</div>
 						<div class="filters-price-range">
-							<div class="filter-name">Цена: 100 руб. — 500 руб.
-							</div>
+							<div class="filter-name">Цена: 100 руб. — 500 руб.</div>
 							<div class="range-controls">
 								<div class="scale">
 								<div class="bar"></div>
@@ -132,8 +133,7 @@
 							</div>
 						</div>
 						<div class="filters-fat-content">
-							<div class="filter-name">Жирность:
-							</div>
+							<div class="filter-name">Жирность:</div>
 							<div class="values">
 								<div class="filter-select">
 									<input id="fat-0" type="radio" name="fat" value="zero">
