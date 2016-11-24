@@ -288,7 +288,7 @@ li .current-page-link {
 .sign-in-icon:before {
 	position: absolute;
 	top: 0;
-	left: 10px;
+	left: 12px;
 	width: 30px;
 	height: 30px;
 	content: "";
@@ -371,7 +371,7 @@ li .current-page-link {
 }
 .full-cart {
 	width: 120px;
-	padding: 8px 16px 9px 39px;
+	padding: 8px 16px 9px 44px;
 	color: #323232;
 	background-color: rgba(255, 255, 255, 0.2);
 }
@@ -690,7 +690,7 @@ li .current-page-link {
 	max-width: 100%;
 	height: auto;
 }
-.product-image:before {
+.hit:before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -698,7 +698,16 @@ li .current-page-link {
 	height: 61px;
 	content: "";
 	background: url(../img/hit.png);
-}
+	}
+/*.product-image:before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 61px;
+	height: 61px;
+	content: "";
+	background: url(../img/hit.png);
+}*/
 .product-price {
 	position: absolute;
 	bottom: 10px;
@@ -767,7 +776,6 @@ li .current-page-link {
 	background: #f0e2c7 url("../img/seo-background.jpg") repeat-x;
 }
 .seo h2 {
-	/*margin-bottom: 10px;*/
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 30px;
@@ -885,17 +893,25 @@ li .current-page-link {
 	width: 100%;
 	height: 430px;
 	margin-top: 40px;
-	background: #f3f3f3 url("../img/map.jpg") no-repeat 50%;
+}
+.map-script {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 430px;
 }
 .map-wrapper {
 	position: relative;
 	min-width: 900px;
 	max-width: 1200px;
 	margin: 0 auto;
+	top: 0;
+	right: 2.3%;
 }
 .shop-address {
 	position: absolute;
-	z-index: 2;
+	z-index: 5;
 	top: 65px;
 	right: 2.3%;
 	width: 300px;
@@ -1126,7 +1142,7 @@ h1 {
 .filters-sorting {
 	position: relative;
 }
-.filters-sorting:after {
+.sort:after {
 	position: absolute;
 	top: 43px;
 	right: 15px;
@@ -1139,7 +1155,12 @@ h1 {
 	border-bottom-width: 0;
 	border-left-color: transparent;
 }
-.filters-sorting:hover:after {
+.sort select:hover {
+	color: #000000;
+	border: none;
+	background: #ffffff;
+}
+.sort:hover:after {
 	border: 4px solid #000000;
 	border-right-color: transparent;
 	border-bottom-width: 0;
@@ -1160,11 +1181,7 @@ h1 {
 	-ms-appearance: none;
 	appearance: none;
 }
-.filters-sorting select:hover {
-	color: #000000;
-	border: none;
-	background: #ffffff;
-}
+
 .range-controls {
 	position: relative;
 	min-height: 36px;
@@ -1279,6 +1296,12 @@ h1 {
 .filter-fillers input:checked+label:before {
 	background: url("../img/checkbox.png") no-repeat 2px 4px;
 }
+.disabled-filter {
+	opacity: 0.4;
+}
+.disabled-filter:hover {
+	cursor: none;
+}
 .pages {
 	width: 300px;
 	margin-top: 42px;
@@ -1322,8 +1345,8 @@ h1 {
 	background-position: 50% -30px;
 }
 .pages .current {
-	color: black;
-	background-color: white;
+	color: #000000;
+	background-color: #ffffff;
 }
 .pages .disabled {
 	opacity: 0.3;
