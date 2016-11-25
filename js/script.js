@@ -16,6 +16,7 @@ close.addEventListener("click", function(event) {
 });
 function initialize() {
 	var mapOptions = {
+		scrollwheel: false,
 		zoom: 15,
 		center: new google.maps.LatLng(59.9386865,30.3207383)
 }

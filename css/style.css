@@ -20,6 +20,7 @@ body>input[type="radio"] {
 .site-wrapper {
 	background-repeat: no-repeat;
 	background-position: top center;
+	transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 .part-wrapper {
 	min-width: 900px;
@@ -1296,10 +1297,9 @@ h1 {
 .filter-fillers input:checked+label:before {
 	background: url("../img/checkbox.png") no-repeat 2px 4px;
 }
-.disabled-filter {
+input[type="radio"][disabled],
+input[type="checkbox"][disabled] {
 	opacity: 0.4;
-}
-.disabled-filter:hover {
 	cursor: none;
 }
 .pages {
