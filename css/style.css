@@ -10,7 +10,7 @@ input {
 }
 body {
 	position: relative;
-	font-family: "Roboto", "Arial", sans-serif;
+	font-family: "Roboto",/* "Arial",*/ sans-serif;
 	font-weight: 400;
 	color: white;
 }
@@ -178,9 +178,6 @@ header:after {
 .navigation li:hover .drop-wrapper {
 	display: block;
 }
-.menu-drop>li:active {
-	background-color: #f99999;
-}
 .menu-drop a {
 	display: block;
 	padding: 8px 17px;
@@ -188,6 +185,9 @@ header:after {
 	text-decoration: none;
 	color: #000000;
 	border: none;
+}
+.menu-drop a:active {
+	background-color: #f99999;
 }
 .menu-drop a:not(.current-page-link):hover {
 	cursor: pointer;
@@ -536,9 +536,13 @@ li .current-page-link {
 	width: 700px;
 	margin: 0 auto;
 	margin-bottom: 30px;
+/*	font-family: "Roboto", "Arial", sans-serif;*/
 	font-size: 60px;
 	font-weight: 800;
 	line-height: 60px;
+}
+.slide-2 {
+	width: 690px;
 }
 .slide-btn {
 	display: inline-block;
