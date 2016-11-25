@@ -186,13 +186,13 @@ header:after {
 	color: #000000;
 	border: none;
 }
-.menu-drop a:active {
-	background-color: #f99999;
-}
-.menu-drop a:not(.current-page-link):hover {
+.menu-drop a:hover {
 	cursor: pointer;
 	text-decoration: none;
 	background-color: #fbded7;
+}
+.menu-drop a:active {
+	background-color: #d07058;
 }
 .bold-menu {
 	margin-bottom: 5px;
