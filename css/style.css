@@ -255,7 +255,7 @@ li .current-page-link {
 	width: 33px;
 	height: 33px;
 	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.2) url("../img/icon-search.png") no-repeat 50% 7px;
+	background: rgba(255, 255, 255, 0.2) url("../img/spritesheet.png") no-repeat -281px 2px;
 }
 .search_user-block {
 	position: relative;
@@ -278,8 +278,7 @@ li .current-page-link {
 	display: block;
 }
 .search_user-block:hover .search-icon {
-	/*	background-color: #f8f7f4;*/
-	background: rgba(255, 255, 255, 1) url("../img/icon-search-hover.png") no-repeat 50% 6px;
+	background: rgba(255, 255, 255, 1) url("../img/spritesheet.png") no-repeat -281px -31px;
 }
 .sign-in_user-block {
 	position: relative;
@@ -293,7 +292,7 @@ li .current-page-link {
 	width: 30px;
 	height: 30px;
 	content: "";
-	background: rgba(255, 255, 255, 0) url("../img/icon-signin.png") no-repeat 50%;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -316px 1px;
 }
 .sign-in-icon {
 	position: relative;
@@ -354,7 +353,7 @@ li .current-page-link {
 	color: #333333;
 }
 .sign-in_user-block:hover .sign-in-icon:before {
-	background: rgba(255, 255, 255, 0) url("../img/icon-signin-hover.png") no-repeat 50%;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -316px -31px;
 }
 .sign-in_user-block:hover
 .signin-submit:after {
@@ -371,7 +370,7 @@ li .current-page-link {
 	background-color: rgba(255, 255, 255, 0.2);
 }
 .full-cart {
-	width: 120px;
+	width: 117px;
 	padding: 8px 16px 9px 44px;
 	color: #323232;
 	background-color: rgba(255, 255, 255, 0.2);
@@ -386,10 +385,10 @@ li .current-page-link {
 	width: 21px;
 	height: 21px;
 	content: "";
-	background: rgba(255, 255, 255, 0) url("../img/icon-emptycart.png") no-repeat 50%;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -29px -4px;
 }
 .cart_user-block:hover:before {
-	background: rgba(255, 255, 255, 0) url("../img/icon-emptycart-hover.png") no-repeat 50%; 
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -30px -38px; 
 }
 .cart_user-block:hover {
 	background-color: rgba(255, 255, 255, 1);
@@ -408,7 +407,7 @@ li .current-page-link {
 	width: 21px;
 	height: 21px;
 	content: "";
-	background: rgba(255, 255, 255, 0) url("../img/icon-fullcart.png") no-repeat 50%;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -30px -72px;
 }
 .full-cart:hover {
 	background-color: rgba(255, 255, 255, 1);
@@ -703,16 +702,7 @@ li .current-page-link {
 	height: 61px;
 	content: "";
 	background: url(../img/hit.png);
-	}
-/*.product-image:before {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 61px;
-	height: 61px;
-	content: "";
-	background: url(../img/hit.png);
-}*/
+}
 .product-price {
 	position: absolute;
 	bottom: 10px;
@@ -722,6 +712,7 @@ li .current-page-link {
 }
 .product-price span {
 	font-size: 45px;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 .product-name {
 	position: relative;
@@ -989,24 +980,16 @@ footer {
 	box-shadow: 0 2px 1px #888888 inset;
 }
 .twitter-button {
-	background-color: rgba(255, 255, 255, 0);
-	background-image: url(../img/icon-twitter.png);
-	background-repeat: no-repeat;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -102px -5px;
 }
 .instagram-button {
-	background-color: rgba(255, 255, 255, 0);
-	background-image: url(../img/icon-instagram.png);
-	background-repeat: no-repeat;;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -189px -5px;
 }
 .facebook-button {
-	background-color: rgba(255, 255, 255, 0);
-	background-image: url(../img/icon-facebook.png);
-	background-repeat: no-repeat;;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -145px -5px;
 }
 .vk-button {
-	background-color: rgba(255, 255, 255, 0);
-	background-image: url(../img/icon-vk.png);
-	background-repeat: no-repeat;;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -234px -5px;
 }
 .social-buttons a:hover {
 	opacity: 1;
@@ -1059,7 +1042,7 @@ footer {
 	width: 15px;
 	height: 13px;
 	content: "";
-	background: url("../img/icon-heart.png") 50% 0;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -67px -5px;
 }
 .footer-credits {
 	margin-top: -15px;
@@ -1104,10 +1087,6 @@ h1 {
 }
 .filters-block label:hover {
 	cursor: pointer;
-}
-.filters-sorting:hover .sort {
-	color: #ffffff;
-	background-color: #000000;
 }
 #filters>div {
 	display: inline-block;
@@ -1299,7 +1278,7 @@ h1 {
 	box-shadow: 0 0 0 1px #ffffff;
 }
 .filter-fillers input:checked+label:before {
-	background: url("../img/checkbox.png") no-repeat 2px 4px;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -3px 0px;
 }
 input[type="radio"][disabled],
 input[type="checkbox"][disabled] {
@@ -1338,15 +1317,11 @@ input[type="checkbox"][disabled] {
 }
 .pages .prev {
 	text-indent: -10000px;
-	background-image: url("../img/pages-arrows.png");
-	background-repeat: no-repeat;
-	background-position: 50% 7px;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -347px 0px;
 }
 .pages .next {
 	text-indent: -10000px;
-	background-image: url("../img/pages-arrows.png");
-	background-repeat: no-repeat;
-	background-position: 50% -30px;
+	background: rgba(255, 255, 255, 0) url("../img/spritesheet.png") no-repeat -347px -36px;
 }
 .pages .current {
 	color: #000000;
